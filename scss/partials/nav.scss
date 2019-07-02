@@ -1,0 +1,39 @@
+.sidebar {
+    background: $menu-background;
+    flex: 1 1 20%;
+    min-width: 300px;
+    padding: 3em;
+    z-index: 2;
+  }
+  
+  .logo {
+    text-transform: uppercase;
+    color: $main-font-color;
+    margin-bottom: 2em;
+    
+    @media (min-width: 1500px) {
+      margin-bottom: 5em;
+    }
+    
+    span {
+      font-weight: $font-bold;
+    }
+  }
+  
+  .nav-item {
+    color: $menu-font-color;
+    text-decoration: none;
+    font-size: 1.7rem;
+    display: inline-block;
+    margin-right: 2em;
+    @media (min-width: 1500px) {
+      display: block;
+      margin: 7vh 0;
+    }
+    
+    &.active {
+      color: $menu-active-color;
+    }
+  }
+  
+  

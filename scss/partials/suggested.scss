@@ -1,0 +1,51 @@
+.suggested {
+
+  &__header {
+    text-align: center;
+  }
+
+  &__link {
+    overflow: hidden;
+    position: relative;
+    background: #fff;
+    border-radius: .5rem;
+    height: 100px;
+    padding: 10px;
+    opacity: 0.6;
+  
+    &-title{
+      display: block;
+      font-size: 1.4rem;
+      margin-bottom: .8rem;
+      color: $medium-gray;
+    }
+  
+    a {
+      text-decoration: none;
+      display: block;
+      height: 100%;
+      width: 100%;
+  
+      &:before {
+        position: absolute;
+        content: "kliknij";
+        bottom: 0;
+        right: .4rem;
+        font-size: 2rem;
+        opacity: 0.6;
+        bottom: -100%;
+        transition: 0.3s ease-in-out bottom;
+        will-change: bottom;
+        transform: rotate(15deg);
+      }
+    
+      &:hover:before {
+        bottom: 20%;
+      }
+    }
+  }
+  
+  .suggested__link:hover {
+    opacity: 1;
+  }
+}

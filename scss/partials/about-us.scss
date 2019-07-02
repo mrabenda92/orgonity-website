@@ -1,0 +1,49 @@
+.about-us {
+    display: grid;
+    grid-template-rows: repeat(8, 1fr);
+    grid-template-columns: repeat(9, 1fr);
+    grid-gap: 5px;
+    z-index: 1;
+  
+    &__main {
+      grid-row: 1 / 2;
+      grid-column: span 9;
+      animation: slide 3s 0.5s both;
+    }
+  
+    &__product {
+      grid-row: 2 / 8;
+      grid-column: 1 / 4;
+      animation: slide 3s 0.5s both;
+    }
+  
+    &__pict {
+      grid-row: 2 / 8;
+      grid-column: 4 / span 6;
+      background-image: url(../orgonity/IMG_20181021_125922.jpg);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      animation: showPict 3s 0.5s both;
+    }
+  
+    @media(max-width: 700px) {
+      display: block;
+      // display: flex;
+      // grid-template-rows: repeat(3, 1fr);
+      // grid-template-columns: repeat(3, 1fr);
+  
+      &__product {
+        grid-column: span 9;
+        // grid-row: 2;
+        // grid-column: span 3;
+      }
+  
+      &__pict {
+        // display: none;
+      //  grid-column: span 3;
+      //  grid-row: 3;
+      }
+    }
+  }
+  
