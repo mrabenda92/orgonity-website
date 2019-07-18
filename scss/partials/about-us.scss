@@ -1,31 +1,47 @@
 .about-us {
-    display: grid;
-    grid-template-rows: repeat(8, 1fr);
-    grid-template-columns: repeat(9, 1fr);
-    grid-gap: 5px;
+    // display: grid;
+    // grid-template-rows: repeat(8, 1fr);
+    // grid-template-columns: repeat(9, 1fr);
+    // grid-gap: 5px;
     z-index: 1;
   
     &__main {
-      grid-row: 1 / 2;
-      grid-column: span 9;
+      // grid-row: 1 / 2;
+      // grid-column: span 9;
       animation: slide 3s 0.5s both;
+      text-transform: uppercase;
+      color: rgb(94, 89, 89);
+      font-size: 3rem;
+      font-weight: bold;
+      text-shadow: 6px 6px 10px;
+      text-align: center;
     }
   
     &__product {
-      grid-row: 2 / 8;
-      grid-column: 1 / 4;
+      // grid-row: 2 / 8;
+      // grid-column: 1 / 4;
       animation: slide 3s 0.5s both;
+      text-indent: 60px;
     }
   
     &__pict {
-      grid-row: 2 / 8;
-      grid-column: 4 / span 6;
-      background-image: url(../orgonity/IMG_20181021_125922.jpg);
-      background-position: center;
-      background-repeat: no-repeat;
-      background-size: cover;
-      animation: showPict 3s 0.5s both;
-    }
+      display: none;
+
+      @media(min-width: 906px) {
+        display: block;
+        width: 800px;
+        height: 440px;
+        // grid-row: 2 / 8;
+        // grid-column: 4 / span 6;
+        background-image: url(../orgonity/IMG_20181021_125922.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        animation: showPict 3s 1s both;
+        box-shadow: 3px 3px 14px 4px rgb(84, 84, 87);
+        align: center;
+        margin: 0 auto;
+    }}
   
     @media(max-width: 700px) {
       display: block;
@@ -34,7 +50,7 @@
       // grid-template-columns: repeat(3, 1fr);
   
       &__product {
-        grid-column: span 9;
+        // grid-column: span 9;
         // grid-row: 2;
         // grid-column: span 3;
       }

@@ -1,5 +1,5 @@
 .main-content {
-    padding: 10%;
+    padding: 5%;
     flex: 1 1 80%;
     min-height: 100vh;
   }
@@ -19,14 +19,14 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    
-   
     font-size: 1.5em;
     background-size: cover;
     background-position: top left;
     transition: all ease-in-out 300ms;
     position: relative;
     z-index: 10;
+    transition: all 1.5s ease-in-out;
+    box-shadow: 3px 3px 14px 4px rgb(84, 84, 87);
     
     &.small {
       grid-row: span 1;
@@ -62,10 +62,10 @@
       color: white;
       text-shadow: 0 0 5px rgba(0, 0, 0, 0.85);
     }
-  }}
-  
+  }
+
   .orgo_pict {
-    background-image: url(../orgonity/IMG_20181011_193101.jpg);
+    background-image: url("../orgonity/IMG_20181011_193101.jpg");
     background-position: center;
     background-repeat: no-repeat;
     
@@ -79,15 +79,30 @@
       right: 0;
       bottom: 0;
       left: 0;
-      // transition: all ease-in-out 300ms;
       z-index: -1;
     }
-    
-    // &:hover::before {
-    //   opacity: 0.2;
-    // }
   
     @media(max-width: 600px) {
       display: none;
+    } 
+  }
+
+    .small_orgo {
+      background-image: url("../orgonity/IMG_20181021_130812.jpg");
+      background-position: 0% 40%;
+    }
+  
+    .medium_orgo {
+      background-image: url("../orgonity/IMG_20181021_130119.jpg");
+      background-position: 0% 50%;
+    }
+  
+    .big_orgo {
+      background-image: url("../orgonity/IMG_20181021_130017.jpg");
+      background-position: 0% 55%;
     }
   }
+
+  
+  
+  

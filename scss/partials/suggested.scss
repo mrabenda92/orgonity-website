@@ -2,6 +2,7 @@
 
   &__header {
     text-align: center;
+    text-shadow: 1px 1px 1px;
   }
 
   &__link {
@@ -12,6 +13,7 @@
     height: 100px;
     padding: 10px;
     opacity: 0.6;
+    box-shadow: 3px 3px 14px 4px rgb(84, 84, 87);
   
     &-title{
       display: block;
